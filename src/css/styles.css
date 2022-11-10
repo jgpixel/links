@@ -1,0 +1,56 @@
+@import url('global.css');
+
+h4 {
+    font-size: 5rem;
+}
+
+.logo-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.links-container {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    flex-direction: column;
+
+    margin: 30px 0 80px 0;
+}
+
+.link-box {
+    background-color: var(--dark);
+    padding: 20px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    
+    font-size: 1.2rem;
+
+    width: min(600px, 95%);
+
+    transition: background-color 0.2s ease-in-out;
+}
+
+.link-box:hover {
+    background-color: var(--dark-hov);
+}
+
+.link-box:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
